@@ -1,0 +1,71 @@
+/* Style of site's main part */
+
+@media screen and (max-height: 1600px) {
+    main {
+        height: 1428px;
+    }
+}
+
+@media screen and (max-height: 1080px) {
+    main {
+        height: 884px;
+    }
+}
+
+@media screen and (max-height: 768px) {
+    main {
+        height: 572px;
+    }
+}
+
+main {
+    background: linear-gradient(to bottom, #3288ed, #78c6ff);
+    padding-top: 60px;
+}
+
+#par {
+	color: #fff;
+	font-size: 22px;
+	font-family: 'Raleway', serif;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#index {
+    float: left;
+    display: block;
+    margin-top: 14px;
+    margin-left: 20px;
+    width: 500px;
+    height: 25px;
+    font-size: 15px;
+    border-color: aliceblue;
+}
+
+#index:hover {
+    border-color: #989898;
+    transition: 0.2s ease-in-out;
+}
+
+#button-index {
+    float: left;
+    display: block;
+    margin-top: 14px;
+    margin-left: 10px;
+    width: 50px;
+    height: 31px;
+    font-size: 16px;
+    font-family: 'Raleway', serif;
+    background: #1d74db;
+    border: 1px solid;
+    border-color: #1d74db;
+    border-radius: 1px;
+    color: rgba(255, 255, 255, 0.59);
+}
+
+#button-index:hover {
+    background: #1563bf;
+    border-color: #1563bf;
+    color: rgb(255, 255, 255);
+    transition: 0.2s ease-in-out;
+}

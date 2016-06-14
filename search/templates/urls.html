@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+	<head>
+		<title>Urls - Mapich</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="{% static 'css/reset.css' %}">
+		<link rel="stylesheet" href="{% static 'css/urls-page-style.css' %}">
+		<link rel="stylesheet" href="{% static 'css/header-style.css' %}">
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+	</head>
+	<body>
+		<header>
+			<!-- Navigation panel -->
+			<nav class="navigation">
+				<ul>
+					<li><a href="base.html">Search</a></li>
+					<li><a href="urls.html">Urls</a></li>
+					<li><a href="settings.html">Settings</a></li>
+					<li><a href="index.html">Add to index</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<hr>
+			{% for url in urls %}
+				<div class="url">
+					<ol>
+						<li><a href="{{ url }}">{{ url }}</a></li>
+					</ol>
+				</div>
+			{% empty %}
+				<p id="not-found">No urls indexed.</p>
+			{% endfor %}
+		</main>
+	</body>
+</html>
